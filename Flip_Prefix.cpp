@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+/*#include <bits/stdc++.h>
 using namespace std;
 int main()
 {
@@ -51,5 +51,25 @@ int main()
             cout << c0 + c1 << endl;
         else
             cout << 1 << endl;
+    }
+}
+*/
+#include<bits/stdc++.h>
+using namespace std;
+int main(){
+    int t;
+    cin>>t;
+    while(t--){
+        int n,x=0,y=0,c=0;
+        cin>>n;
+        string s;
+        cin>>s;
+        for(int i=0;i<n;i++){
+            if(s[i]=='0')x++;
+            else y++;
+
+            if(x==y)c++;
+        }
+        cout<<(1ll<<c)<<endl;
     }
 }
